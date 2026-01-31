@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html class="dark" lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Informazioni legali &amp; Policy | Fitness Center Elite</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FAVICON (vedi istruzioni sotto) -->
+    <link rel="icon" href="image.png" sizes="any" />
+    <link rel="icon" type="image/png" href="image.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="image.png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="image.png" sizes="180x180" />
+
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#135bec",
+              gold: "#D4AF37",
+              "background-light": "#f6f6f8",
+              "background-dark": "#0a0c10",
+              "surface-dark": "#161b22",
+            },
+            fontFamily: {
+              display: ["Lexend", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style type="text/tailwindcss">
+      .gold-text {
+        color: #d4af37;
+      }
+      .gold-border {
+        border-color: #d4af37;
+      }
+      .gold-bg {
+        background-color: #d4af37;
+      }
+      body {
+        font-family: "Lexend", sans-serif;
+      }
+
+      .legal-content h3 {
+        @apply text-gold text-xl font-bold mt-8 mb-4 uppercase tracking-wide;
+      }
+      .legal-content p {
+        @apply text-slate-300 mb-4 leading-relaxed;
+      }
+      .legal-content ul {
+        @apply list-disc list-inside text-slate-300 mb-6 space-y-2 ml-4;
+      }
+      .legal-content li::marker {
+        color: #d4af37;
+      }
+    </style>
+  </head>
+
+  <body class="bg-background-dark text-white transition-colors duration-300">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+      <header
+        class="sticky top-0 z-50 w-full border-b border-white/10 bg-background-dark/80 backdrop-blur-md"
+      >
+        <div
+          class="mx-auto flex max-w-[1200px] items-center justify-between px-6 py-4"
+        >
+          <div class="flex items-center gap-3">
+            <!-- LOGO IMMAGINE (header) -->
+            <a
+              href="index.html"
+              class="flex size-10 items-center justify-center overflow-hidden rounded-lg bg-surface-dark border border-white/10"
+              aria-label="Torna alla home"
+            >
+              <img
+                src="image.png"
+                alt="Fitness Center Elite"
+                class="h-full w-full object-contain p-1"
+                onerror="this.style.display='none'; this.parentElement.classList.add('bg-gold'); this.parentElement.innerHTML='<span class=&quot;text-background-dark font-black text-xs&quot;>ELITE</span>';"
+              />
+            </a>
+
+            <h2 class="gold-text text-xl font-extrabold uppercase tracking-widest">
+              Elite
+            </h2>
+          </div>
+
+          <nav class="hidden items-center gap-10 md:flex">
+            <a
+              class="text-sm font-medium uppercase tracking-wider text-white hover:text-gold transition-colors"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              class="text-sm font-medium uppercase tracking-wider text-white hover:text-gold transition-colors"
+              href="index.html#classes"
+              >Corsi</a
+            >
+            <a
+              class="text-sm font-medium uppercase tracking-wider text-white hover:text-gold transition-colors"
+              href="index.html#trainers"
+              >Trainer</a
+            >
+            <a
+              class="text-sm font-medium uppercase tracking-wider text-white hover:text-gold transition-colors"
+              href="index.html#contact"
+              >Contatti</a
+            >
+          </nav>
+
+          <div class="flex items-center gap-4">
+            <a
+              href="index.html#contact"
+              class="hidden min-w-[140px] items-center justify-center rounded-lg bg-primary px-5 py-2.5 text-sm font-bold uppercase tracking-wider text-white hover:bg-primary/90 transition-all md:flex"
+            >
+              Scopri di più
+            </a>
+
+            <button
+              class="flex size-10 items-center justify-center rounded-full border border-white/10 bg-surface-dark md:hidden"
+              aria-label="Apri menu"
+            >
+              <span class="material-symbols-outlined text-white">menu</span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main class="flex-1">
+        <section class="border-b border-white/5 bg-surface-dark/30 py-16">
+          <div class="mx-auto max-w-[1200px] px-6">
+            <h1
+              class="text-4xl font-black uppercase tracking-tight text-white md:text-5xl"
+            >
+              Informazioni <span class="gold-text">legali</span>
+            </h1>
+
+            <p class="mt-4 max-w-2xl text-slate-400">
+              In Fitness Center Elite crediamo nella trasparenza e nella tutela
+              dei diritti dei nostri iscritti. Qui trovi policy e condizioni
+              aggiornate.
+            </p>
+          </div>
+        </section>
+
+        <section class="mx-auto max-w-[1200px] px-6 py-12">
+          <div class="flex flex-col gap-12 lg:flex-row">
+            <aside class="w-full lg:w-64 flex-shrink-0">
+              <nav class="sticky top-28 space-y-2">
+                <a
+                  class="flex items-center gap-3 rounded-lg bg-gold px-4 py-3 text-sm font-bold uppercase tracking-wider text-background-dark transition-all"
+                  href="#privacy"
+                >
+                  <span class="material-symbols-outlined text-xl">shield_lock</span>
+                  Privacy Policy
+                </a>
+
+                <a
+                  class="flex items-center gap-3 rounded-lg bg-surface-dark px-4 py-3 text-sm font-medium uppercase tracking-wider text-slate-300 hover:bg-white/5 hover:text-gold transition-all"
+                  href="#terms"
+                >
+                  <span class="material-symbols-outlined text-xl">gavel</span>
+                  Termini di servizio
+                </a>
+
+                <a
+                  class="flex items-center gap-3 rounded-lg bg-surface-dark px-4 py-3 text-sm font-medium uppercase tracking-wider text-slate-300 hover:bg-white/5 hover:text-gold transition-all"
+                  href="#cookies"
+                >
+                  <span class="material-symbols-outlined text-xl">cookie</span>
+                  Cookie Policy
+                </a>
+              </nav>
+            </aside>
+
+            <div class="legal-content flex-1 max-w-3xl">
+              <div class="mb-20 scroll-mt-28" id="privacy">
+                <h2 class="text-3xl font-bold text-white border-b border-gold/30 pb-4">
+                  Privacy Policy
+                </h2>
+
+                <p class="mt-6 italic">Ultimo aggiornamento: 20 maggio 2024</p>
+
+                <h3>1. Dati che raccogliamo</h3>
+                <p>
+                  Fitness Center Elite tratta alcuni dati personali per offrirti
+                  la migliore esperienza in palestra. In particolare:
+                </p>
+                <ul>
+                  <li>Dati identificativi (nome, data di nascita, documento).</li>
+                  <li>Contatti (email, telefono, indirizzo di residenza).</li>
+                  <li>
+                    Dati sanitari/biometrici (forniti volontariamente per piani
+                    personalizzati).
+                  </li>
+                  <li>Dati di pagamento per la gestione dell’abbonamento.</li>
+                </ul>
+
+                <h3>2. Come utilizziamo i tuoi dati</h3>
+                <p>I tuoi dati vengono utilizzati esclusivamente per:</p>
+                <ul>
+                  <li>Gestire l’iscrizione e l’accesso alla struttura.</li>
+                  <li>
+                    Inviarti comunicazioni importanti (orari corsi, avvisi, aggiornamenti).
+                  </li>
+                  <li>Analisi interne per migliorare servizi e attrezzature a Bitonto.</li>
+                  <li>Adempimenti legali e fiscali previsti dalla normativa italiana.</li>
+                </ul>
+
+                <h3>3. Protezione dei dati</h3>
+                <p>
+                  Applichiamo misure tecniche e organizzative adeguate per
+                  proteggere i dati da accessi non autorizzati, perdita o
+                  distruzione. L’accesso a eventuali dati legati alla salute è
+                  limitato ai trainer qualificati e solo quando necessario per il
+                  tuo programma.
+                </p>
+              </div>
+
+              <div class="mb-20 scroll-mt-28" id="terms">
+                <h2 class="text-3xl font-bold text-white border-b border-gold/30 pb-4">
+                  Termini di servizio
+                </h2>
+
+                <h3>1. Requisiti di iscrizione</h3>
+                <p>
+                  Per iscriversi è necessario avere almeno 18 anni oppure
+                  presentare consenso scritto di un genitore/tutore. È richiesto
+                  un certificato medico per attività sportiva non agonistica, come
+                  previsto dalla normativa italiana.
+                </p>
+
+                <h3>2. Regole e comportamento</h3>
+                <ul>
+                  <li>È obbligatorio un abbigliamento adeguato e scarpe pulite da interno.</li>
+                  <li>È obbligatorio usare l’asciugamano su ogni attrezzo durante l’allenamento.</li>
+                  <li>I pesi vanno riposti negli appositi supporti dopo l’uso.</li>
+                  <li>È richiesto rispetto verso staff e altri iscritti in ogni momento.</li>
+                </ul>
+
+                <h3>3. Disdetta</h3>
+                <p>
+                  La disdetta dell’abbonamento deve essere richiesta per iscritto
+                  presso la reception della sede di Bitonto in Via Giovanna da
+                  Durazzo, 35, almeno 30 giorni prima del successivo ciclo di
+                  fatturazione.
+                </p>
+              </div>
+
+              <div class="mb-20 scroll-mt-28" id="cookies">
+                <h2 class="text-3xl font-bold text-white border-b border-gold/30 pb-4">
+                  Cookie Policy
+                </h2>
+
+                <h3>1. Cosa sono i cookie?</h3>
+                <p>
+                  I cookie sono piccoli file di testo salvati sul tuo dispositivo.
+                  Aiutano il sito a funzionare correttamente e ci permettono di
+                  capire come viene utilizzato.
+                </p>
+
+                <h3>2. Tipologie di cookie che utilizziamo</h3>
+                <ul>
+                  <li>
+                    <strong>Cookie essenziali:</strong> necessari al funzionamento
+                    del sito (es. sessioni di accesso area membri).
+                  </li>
+                  <li>
+                    <strong>Cookie analitici:</strong> ci aiutano a capire il
+                    traffico e l’uso del sito del centro di Bitonto.
+                  </li>
+                  <li>
+                    <strong>Cookie funzionali:</strong> ricordano le preferenze
+                    (es. lingua o impostazioni).
+                  </li>
+                </ul>
+
+                <h3>3. Gestione delle preferenze</h3>
+                <p>
+                  Puoi gestire o disattivare i cookie dalle impostazioni del tuo
+                  browser. Disattivando i cookie essenziali alcune funzionalità
+                  (come l’area riservata) potrebbero non essere disponibili.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="border-t border-white/5 bg-background-dark py-12">
+        <div class="mx-auto max-w-[1200px] px-6 text-center">
+          <div class="mb-8 flex flex-col items-center gap-4">
+            <div class="flex items-center gap-3">
+              <!-- LOGO IMMAGINE (footer) -->
+              <a
+                href="index.html"
+                class="flex size-8 items-center justify-center overflow-hidden rounded bg-surface-dark border border-white/10"
+                aria-label="Torna alla home"
+              >
+                <img
+                  src="image.png"
+                  alt="Fitness Center Elite"
+                  class="h-full w-full object-contain p-1"
+                  onerror="this.style.display='none'; this.parentElement.classList.add('bg-gold'); this.parentElement.innerHTML='<span class=&quot;text-background-dark font-black text-[10px]&quot;>EL</span>';"
+                />
+              </a>
+
+              <h2 class="gold-text text-lg font-extrabold uppercase tracking-widest">
+                Fitness Center Elite
+              </h2>
+            </div>
+
+            <p class="max-w-[500px] text-xs leading-relaxed text-slate-500">
+              © 2024 Fitness Center Elite Bitonto. Tutti i diritti riservati.
+              Coaching premium e strutture d’eccellenza per chi pretende di più da sé
+              stesso.
+            </p>
+          </div>
+
+          <div
+            class="flex justify-center gap-8 text-[10px] font-bold uppercase tracking-widest text-slate-600"
+          >
+            <a class="hover:text-gold transition-colors" href="legal-info.html"
+              >Informazioni legali</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
